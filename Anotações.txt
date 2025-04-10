@@ -1,0 +1,91 @@
+JSX:
+Como um HTML (Tags, fechamento e aberturas, classes, id, etc.) porém dentro de um código JavaScript.
+Principal maneira de escrever HTML com o React
+Interpolar variáveis, inserindo ente {}
+Executar funções em JSX
+Valores em atributos de tags
+
+Componentes:
+Dividir aplicação em partes
+Renderizam JSX, assim como App.js (é um componente)
+Criar um arquivo de componente e importa-lo
+Por padrão, na pasta componentes
+Letras Maiúsculas no começo, e Maiúscula para separar palavras
+
+
+Props pt 1:
+Valores passado para componentes
+Dinâmicos
+Passado como atributo na camada do componente
+Resgatado dentro de uma propriedade/argumento
+Somente de leitura
+Pode ser passado por objeto (props.nome - props.idade - props.cpf) ou argumentos (nome, idade, cpf)
+
+Props pt 2:
+Definir tipos para as props, realizando validações
+Definir em um objeto (PropType) no componente
+Definir um valor padrão (defaultProps)
+
+CSS:
+Adicionado de forma global (index.css)
+Utilizar também em nível de componente
+CSS Modules para componentes
+Nome do arquivo: Componente.module.css
+Chamar o CSS no componente
+
+Fragments:
+Componente sem elemento pai
+Descomplicar os nós do DOM
+Sintaxe: <> e </>, não tendo nome para a tag
+Criamos no próprio JSX
+
+Eventos:
+Mesmos eventos do DOOM
+Eventos para responder a um click
+Evento atrelado por uma TAG, que irá executalo
+Um método é atribuido ao evento
+Método deve ser criado no componente
+
+UseState:
+Basicamente um hook do React
+Manusear o estado de um componente de forma simples
+Funciona bem com eventos
+podemos atrelar um evento a mudança de state
+
+Metodos por props:
+Métodos podem ser passados por props
+Componente filho pode ativar o método do seu ancestral
+Acessar o método por meio de um evento
+Sentaxe é a mesma de uma props de dados (props.meuEvento)
+
+Renderização por condição:
+Atrelar a exibição de algum elemento a um IF
+Envolvemos as tagas em chaves {}
+{} executam JavaScript, criamos nossa condição
+Usar useState para criar as condições
+
+Renderização de listas:
+Precisar de um array (lista)
+Utilizar a funçãio map, para percorrer cada item
+Unir operadores condicionais condicionais com a renderização de listas
+
+State Lift:
+Compartilhar o State
+Vários componentes dependendo do mesmo estado
+Elevando o nível do mesmo a um componente pai
+Centralizando o state no componente pai, definimos quem usa e quem define (setState)
+--Um componente faz a setagem do valor, usando o componente pai para pegar os valores, e outro componente pode acessar
+--Por exemplo, app.js é o pai, Os componentes que setam vem dele.
+
+React Router:
+Mudanças de URLs da aplicação
+Acessar outras views, sem o page reload
+Trocar apenas uma parte do layout, ou seja, de view para view
+Precisa instalar o pacote para o projeto
+Realizar algumas mudanças em como o App é estruturado
+
+React Icons
+Pacote de icones externos
+Adicionar atraves do NPM
+Adicionar icones com sintaxe de componente
+Muitos icones existentes
